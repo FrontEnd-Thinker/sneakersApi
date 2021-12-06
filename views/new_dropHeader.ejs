@@ -1,0 +1,148 @@
+<div id="hero-cont" style="height: 500px; background: linear-gradient(180deg, rgba(255,249,249,1) 64%, rgba(4,4,4,1) 64%);"
+    class="position-relative overflow-hidden text-left bg-light">
+   
+        <div class="container mt-5">
+                 <img src="https://i.ibb.co/yXfVZpv/Screen-Shot-2021-12-05-at-12-55-51-PM.png"
+            alt="Screen-Shot-2021-12-05-at-12-55-51-PM" border="0" width="100%">
+
+        </div>
+
+</div>
+
+<section class="search-sect">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+            
+            <form class="form-inline" action="">
+                 <div class="form-group search-cont">
+                     <input type="search" class="form-control" placeholder="Search by color, brand, or shoe..." id="search">
+                     <button type="submit">Search</button>
+                 </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<section class="menu-sect">
+
+    <div class="container-fluid">
+        <div class="row align-items-center menu-cont">
+            <div class="col-2 bg-white border-2">Apparel</div>
+            <div class="col-2 bg-white border-2">Shop By Vendor</div>
+            <div class="col-2 bg-white border-2">Accessories</div>
+            <div class="col-2 bg-white border-2">New Drop Store</div>
+            <div class="col-2 bg-white border-2">About NDTs</div>
+            <div class="col-2 bg-white border-2">Contact</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="filter-by-brands-sect brands-sect">
+
+    <div class="container heading mb-5">
+        <h2>
+            Filer by brands to find new drip
+        </h2>
+        <p>
+            first find the brand, then the shoe, and then the drip drop that was designed to maatch and cooridinate with
+            it.
+        </p>
+    </div>
+
+
+
+<div class="container" style="height: 500px; overflow-y: scroll;">
+<div class=" flex-wrap brands-cont">
+
+    <% brands.forEach(function(element){ %>
+
+    <div class="d-flex flex-column align-items-center justify-content-center bg-white brands"> 
+        
+        <div><a class="text-dark" href="<%= element.brand %>"><%= element.brand %></a> </div>
+        <div></div>
+    </div>
+
+    <% }) %>
+
+
+    </div>
+
+
+</section>
+
+<section class="product-sect bg-light">
+
+    <%- include('heroSection'); -%>
+
+</section>
+
+<div class="scrollmenu">
+
+    <% brands.forEach(function(element){ %>
+
+    <a href="<%= element.brand %>"><%= element.brand %></a>
+
+    <% }) %>
+</div>
+
+
+
+ <%- include('products'); -%>
+
+
+<section class="new-drop-community-sect">
+
+    <div class="container ">
+        <div class="new-drop-community-cont">
+        <h3 class="sub-heading">
+            New Drop Community
+
+        </h3>
+
+        <div class="new-drop-banner d-flex "> 
+
+            <div class="content">
+                <h2>
+                    See Who's rocking the lated drip <br> on new drop social
+                </h2>
+                <a href="#" class="learn-more"> Learn More</a>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="new-drop-vendor">
+
+    <div class="container ">
+        <div class="new-drop-vendor-cont">
+       <h3>Vendor registration</h3>
+
+            <div class="new-drop">
+
+                <div class="footer-banner-img">
+                    
+                    <img
+                        src="https://images.unsplash.com/photo-1496115898806-2b023a9dcb6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1220&q=80"
+                        alt="" width="100%" max-width="900px">
+                
+                </div>
+                    <div class="vendor-content">
+                        <h2>want to sell your new<br> drip on new drop tees?</h2>
+                        <a class="learn-more" href="#">learn more</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

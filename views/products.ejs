@@ -1,0 +1,159 @@
+
+<section class="my-5 py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-white py-3">
+                <h2> Jordans </h2>
+                <p>New Release</p>
+                <div>
+                
+                    <div class="d-flex" style="overflow-x: auto; gap: 20px;">
+                        <% shoes.forEach(function(element){ %>
+
+                        <div class="card-1" style="border: 1px white solid; min-width: 300px;" >
+                            
+                            <article class="text-left card-body">
+                                <h3 class="display-5"><%= element.shoe %></h3>
+                                <div>
+                                    <span>
+                                        <p><%= element.colorway %></p>
+                                    </span>
+                                </div>
+                                <span clsss="text-danger"><%= element.releaseDate %> </span>
+                            </article>
+                            <div class="card-footer">
+                            <img src="<%= element.img %>" alt="" width="100%">
+                        </div>
+                        </div>
+
+
+                        <% }) %>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section class="my-5 py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-white py-3">
+                <h2> Adidas </h2>
+                <p>New Release</p>
+                <div>
+
+                    <div class="d-flex" style="overflow-x: auto; gap: 20px;">
+                        <% adidas.forEach(function(element){ %>
+
+                        <div class="card-1" style="border: 1px white solid; min-width: 300px;">
+
+                            <article class="text-left card-body">
+                                <h3 class="display-5"><%= element.shoe %></h3>
+                                <div>
+                                    <span>
+                                        <p><%= element.colorway %></p>
+                                    </span>
+                                </div>
+                                <span clsss="text-danger"><%= element.releaseDate %> </span>
+                            </article>
+                            <div class="card-footer">
+                                <img src="<%= element.img %>" alt="" width="100%">
+                            </div>
+                        </div>
+
+
+                        <% }) %>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section>
+
+    <div class="container-fluid">
+        <div class="row ">
+
+            <div class="col-6 p-5 d-flex align-items-end flex-column justify-content-center">
+
+                <div class="container ">
+                    <span class="text-white text-uppercase mb-3 d-block">Its All About What You Rocking</span>
+
+                     <div class="steps-cont d-flex ">
+                         <div class="steps text-white text-left display-4"> 1. Pick A<span
+                                 class="text-warning display-4"> Color. </span> </div>
+                         <div class="steps text-white text-center display-4"> 2. Choose Your <span
+                                 class="text-success display-4"> Drip. </span></div>
+                         <div class="steps text-white text-right display-4"> 3. Leave No <span
+                                 class="text-danger display-4"> Doubt.</span></div>
+                     </div>
+                    
+                    </div>
+                <div class="color-cont my-5 d-flex">
+                    <div class="colors1"></div>
+                    <div class="colors2"></div>
+                    <div class="colors3"></div>
+                    <div class="colors4"></div>
+                    <div class="colors5"></div>
+                    <div class="colors6"></div>
+                </div>
+
+               
+                
+            </div>
+            <div class="col-6"><img width="100%" src="https://source.unsplash.com/1600x900/?sneakers" alt="" /></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="my-5 py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-white py-3">
+                <h2> Nike </h2>
+                <p>New Release</p>
+                <div>
+
+                    <div class="d-flex" style="overflow-x: auto; gap: 20px;">
+                        <% nike.forEach(function(element){ %>
+
+                        <div class="card-1" style="border: 1px white solid; min-width: 300px;">
+
+                            <article class="text-left card-body">
+                                <h3 class="display-5"><%= element.shoe %></h3>
+                                <div>
+                                    <span>
+                                        <p><%= element.colorway %></p>
+                                    </span>
+                                </div>
+                                <span clsss="text-danger"><%= element.releaseDate %> </span>
+                            </article>
+                            <div class="card-footer">
+                                <img src="<%= element.img %>" alt="" width="100%">
+                            </div>
+                        </div>
+
+
+                        <% }) %>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
